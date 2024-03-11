@@ -1,0 +1,30 @@
+cabal-version:   3.0
+name:            1brc-hs
+version:         0.1.0.0
+license:         NONE
+author:          Jaro Reinders
+maintainer:      jaro.reinders@gmail.com
+build-type:      Simple
+extra-doc-files: CHANGELOG.md
+
+common warnings
+    ghc-options: -Wall
+
+executable 1brc-hs
+    import:           warnings
+    main-is:          Main.hs
+    build-depends:    base
+                    , bytestring
+                    , unordered-containers
+                    , containers
+                    , deepseq
+                    , flatparse
+                    , hashable
+                    , vector-hashtables
+                    , vector
+                    , linear
+                    , primitive
+    hs-source-dirs:   app
+    default-language: GHC2021
+    -- ghc-options: -prof -fprof-late
+    other-modules:    V4, InsertWith

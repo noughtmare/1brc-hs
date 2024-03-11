@@ -1,0 +1,4 @@
+packages: .
+library-profiling: False
+profiling-detail: late
+optimization: 2
